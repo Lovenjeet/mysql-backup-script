@@ -105,6 +105,8 @@ rclone config
 ### 4c. Verify
 
 ```bash
+mkdir -p /root/.config/rclone
+nano /root/.config/rclone/rclone.conf
 chmod 600 /root/.config/rclone/rclone.conf
 rclone mkdir gdrive:mysql-backups
 rclone lsd gdrive:
